@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerPal e-Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4faf5;
+    color:#2f3e34;
+    line-height:1.7;
+}
+
+/* Navigation */
+nav{
+    position:sticky;
+    top:0;
+    background:#5f8f6d;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    opacity:0.8;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:120px 10%;
+    background:linear-gradient(135deg,#7ba887,#b8d8be);
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-weight:400;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+    color:#5f8f6d;
+    font-size:2rem;
+}
+
+/* Cards */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h2{
+    color:#5f8f6d;
+    margin-bottom:10px;
+}
+
+iframe{
+    width:100%;
+    height:220px;
+    border:none;
+    border-radius:12px;
+    margin:15px 0;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    background:#5f8f6d;
+    color:white;
+    padding:12px 22px;
+    text-decoration:none;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:#4c7458;
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#7ba887;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+}
+
+/* Footer */
+footer{
+    background:#2f3e34;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    section{
+        padding:60px 8%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <h2>⚡ PowerPal Portfolio</h2>
+
+```
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#labs">Labs</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#reflection">Reflection</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#resources">Resources</a></li>
+</ul>
+```
+
+</nav>
+
+<section class="hero" id="home">
+    <h1>⚡ PowerPal e-Portfolio 🌿</h1>
+    <h2>FATIN NAJIHAH BINTI MOHAMAD TARMIDZI</h2>
+
+```
+<p><strong>Matric No:</strong> A211422</p>
+<p><strong>Programme:</strong> SOFTWARE ENGINEERING</p>
+<p><strong>Instructor:</strong> MR NELSON</p>
+
+<br>
+
+<p>
+    I am a student pursuing Software Enginnering with a strong interest in mobile application development.
+    Throughout this course, I have learned to design and develop Android applications using modern technologies such as Jetpack Compose and Room Database.
+    This e-Portfolio showcases my learning journey and projects completed during the semester.
+</p>
+
+<br>
+
+<h2>SDG 7: Affordable and Clean Energy</h2>
+
+<p>
+    I believe that promoting energy efficiency and encouraging responsible electricity consumption can help create a more sustainable future for both society and the environment.
+</p>
+```
+
+</section>
+
+<section id="labs">
+    <h1 class="section-title">Laboratory Activities</h1>
+
+```
+<div class="card-container">
+
+    <div class="card">
+        <h2>Lab 1 – User Interface Design</h2>
+        <iframe src="https://www.youtube.com/embed/KuG-timmS4k"></iframe>
+        <p>
+            In this lab, I learned the fundamentals of designing user interfaces using Jetpack Compose.
+            I explored composable functions and created layouts that are both functional and visually appealing.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Lab 2 – User Interaction</h2>
+        <iframe src="https://www.youtube.com/embed/i3v0q_AEwWw"></iframe>
+        <p>
+            This lab focused on implementing user interactions within an Android application.
+            I learned how to handle events such as button clicks and text input, allowing the application to respond dynamically.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Lab 3 – Material Design</h2>
+        <iframe src="https://www.youtube.com/embed/umjmttD5p14"></iframe>
+        <p>
+            In this lab, I explored Material Design principles and implemented modern UI components to improve usability and visual consistency.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Lab 4 – Navigation</h2>
+        <iframe src="https://www.youtube.com/embed/Dt1Av5O9Ty4"></iframe>
+        <p>
+            This lab introduced Navigation Compose and multi-screen application development.
+            I learned how to move between screens and manage application flow efficiently.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Lab 5 – Room Database</h2>
+        <iframe src="https://www.youtube.com/embed/A1TJfXn8jyY"></iframe>
+        <p>
+            This lab focused on integrating Room Database into Android applications.
+            I implemented entities, DAOs, and database operations to store and retrieve data locally.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="projects">
+    <h1 class="section-title">Projects</h1>
+
+```
+<div class="card-container">
+
+    <div class="card">
+        <h2>⚡ Project 1 – PowerPal</h2>
+
+        <iframe src="https://www.youtube.com/embed/CgHtXRZqY1Q"></iframe>
+
+        <p><strong>Problem Statement</strong></p>
+
+        <p>
+            Users often lack awareness of their daily electricity consumption, making it difficult to develop energy-saving habits and manage electricity usage effectively.
+        </p>
+
+        <br>
+
+        <p>
+            Through this project, I gained practical experience in integrating navigation, state management, and user interface design into a complete application. I also improved my problem-solving skills and learned how technology can encourage better energy-saving habits.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/a211422-cyber/A211422_MrNelson_Project1"
+           target="_blank">
+            View on GitHub
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>🌿 Project 2 – PowerPal</h2>
+
+        <p><strong>YouTube VSR:</strong> Coming Soon</p>
+
+        <br>
+
+        <p><strong>Problem Statement</strong></p>
+
+        <p>
+            Electricity users often lack awareness of their daily energy consumption and environmental conditions that affect usage. This leads to inefficient energy use and higher electricity bills without proper feedback, monitoring, and real-time insights.
+        </p>
+
+        <br>
+
+        <p>
+            This project strengthened my understanding of integrating Room Database, APIs, sensors, and cloud technologies into a mobile application. It also enhanced my ability to combine multiple components into a fully functional Android application.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/a211422-cyber/A211422_MrNelson_Project2"
+           target="_blank">
+            View on GitHub
+        </a>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="reflection">
+    <h1 class="section-title">Reflection & Learning Journey</h1>
+
+```
+<div class="card">
+    <p>
+        Throughout this course, I progressed from creating simple user interfaces to developing complete mobile applications with advanced features such as navigation, databases, and external integrations.
+        Building PowerPal allowed me to apply my technical knowledge to support SDG 7: Affordable and Clean Energy by promoting energy awareness and responsible electricity consumption.
+        Every lab and project introduced new concepts that strengthened my problem-solving abilities and increased my confidence in Android application development.
+    </p>
+</div>
+```
+
+</section>
+
+<section id="skills">
+    <h1 class="section-title">Skills & Tech Stack</h1>
+
+```
+<div class="skills">
+    <div class="skill">Kotlin</div>
+    <div class="skill">Jetpack Compose</div>
+    <div class="skill">Material Design 3</div>
+    <div class="skill">Navigation Compose</div>
+    <div class="skill">Room Database</div>
+    <div class="skill">Android Studio</div>
+    <div class="skill">Git</div>
+    <div class="skill">GitHub</div>
+    <div class="skill">REST API</div>
+    <div class="skill">Sensors</div>
+    <div class="skill">Firebase</div>
+</div>
+```
+
+</section>
+
+<section id="resources">
+    <h1 class="section-title">Resources</h1>
+
+```
+<div class="card">
+    <ul>
+        <li>Android Developers Documentation</li>
+        <li>Jetpack Compose Documentation</li>
+        <li>Room Database Documentation</li>
+        <li>Material Design 3 Documentation</li>
+        <li>GitHub Documentation</li>
+        <li>Stack Overflow</li>
+        <li>ChatGPT (used for guidance and learning support)</li>
+    </ul>
+</div>
+```
+
+</section>
+
+<footer>
+    <p>FATIN NAJIHAH | A211422</p>
+    <p>Mobile Programming e-Portfolio © 2026</p>
+</footer>
+
+</body>
+</html>
